@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.json:com.springsource.org.json:1.0.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.json/com.springsource.org.json/1.0.0/9bd68f3591833625f4ab7c79e7fb14b694a4e21b/com.springsource.org.json-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.json/com.springsource.org.json/1.0.0/af901245778d79e60df48e1852211dacee0cb8f6/com.springsource.org.json-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
