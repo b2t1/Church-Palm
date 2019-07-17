@@ -1,0 +1,86 @@
+[
+  {
+    "nome": "Igreja A Ponte Recife Antigo",
+    "categoria": 1,
+    "latitude": -8.058074,
+    "longitude": -34.872198
+  },
+  {
+    "nome": "Igreja A Ponte Boa Viagem",
+    "categoria": 1,
+    "latitude": -8.114976,
+    "longitude": -34.905905
+  },
+  {
+    "nome": "GR Misto Boa Viagem Quarta",
+    "categoria": 2,
+    "latitude": -8.1209099,
+    "longitude": -34.9020607
+  },
+  {
+    "nome": "GR Misto Boa Viagem Quinta",
+    "categoria": 2,
+    "latitude": -8.1128263,
+    "longitude": -34.8968424
+  },
+  {
+    "nome": "GR Misto Boa Viagem Quinta II",
+    "categoria": 2,
+    "latitude": -8.1150113,
+    "longitude": -34.9011373
+  },
+  {
+    "nome": "GR Misto Cordeiro",
+    "categoria": 2,
+    "latitude": -8.0536379,
+    "longitude": -34.9349966
+  },
+  {
+    "nome": "GR Jovens Casais Boa Viagem",
+    "categoria": 2,
+    "latitude": -8.1094024,
+    "longitude": -34.9052494
+  },
+  {
+    "nome": "GR Misto Recife Antigo",
+    "categoria": 2,
+    "latitude": -8.0647808,
+    "longitude": -34.8759413
+  },
+  {
+    "nome": "GR Misto RioMar",
+    "categoria": 2,
+    "latitude": -8.0864359,
+    "longitude": -34.8957783
+  },
+  {
+    "nome": "GR Mulheres Prado",
+    "categoria": 2,
+    "latitude": -8.0622788,
+    "longitude": -34.9134877
+  },
+  {
+    "nome": "GR Misto Olinda",
+    "categoria": 2,
+    "latitude": -7.9899974,
+    "longitude": -34.8445826
+  },
+  {
+    "nome": "GR Misto Camaragibe",
+    "categoria": 2,
+    "latitude": -8.0159461,
+    "longitude": -34.9793119
+  },
+  {
+    "nome": "GR Misto Olinda II",
+    "categoria": 2,
+    "latitude": -7.99385,
+    "longitude": -34.842841
+  },
+  {
+    "nome": "Festa de Fim de Ano Centro de Convenções",
+    "categoria": 3,
+    "latitude": -8.0320154,
+    "longitude": -34.873116
+  }
+]
