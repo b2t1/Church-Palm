@@ -4,12 +4,18 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
 
+import com.b2t1.churchpalm.parser.DataParser;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -38,10 +44,40 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        Map<Integer, List<LatLng>> locations = new HashMap<Integer, List<LatLng>>();
+        locations = new DataParser().parse(getApplication());
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        for(int i = 1; i <= 3; i++){
+            if(locations.get(i) != null){
+                for(int j = 0; j < locations.get(i).size(); j++){
+                    addMarker(locations.get(i).get(j),i);
+                }
+            }
+        }
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(-8.055368, -34.870393), 12));
+
+
+
+
+
+
+    }
+
+
+    public void addMarker(LatLng latLng, int category){
+        MarkerOptions marker = new MarkerOptions();
+        marker.position(latLng);
+        if(category ==1){
+            marker.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE));
+
+        } else if( category ==2){
+            marker.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN));
+
+        }else if( category ==3){
+            marker.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA));
+
+        }
+        mMap.addMarker(marker);
+
     }
 }
