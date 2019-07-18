@@ -3,6 +3,7 @@ package com.b2t1.churchpalm.adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -35,6 +36,7 @@ public class AdapterPreaching extends RecyclerView.Adapter<AdapterPreaching.MyVi
         Preaching preaching = listPreaching.get(position);
         holder.titulo.setText(preaching.getTitulo());
         holder.data.setText(preaching.getData());
+        holder.image.setImageResource(preaching.getImagem());
     }
 
     @Override
@@ -44,12 +46,14 @@ public class AdapterPreaching extends RecyclerView.Adapter<AdapterPreaching.MyVi
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
+        ImageView image;
         TextView titulo;
         TextView data;
 
         public MyViewHolder(View itemView){
             super(itemView);
 
+            image = itemView.findViewById(R.id.imageImagem);
             titulo = itemView.findViewById(R.id.textTitulo);
             data = itemView.findViewById(R.id.textData);
 

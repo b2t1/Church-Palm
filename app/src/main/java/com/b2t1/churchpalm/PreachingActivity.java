@@ -4,8 +4,6 @@ import android.os.Bundle;
 
 import com.b2t1.churchpalm.adapter.AdapterPreaching;
 import com.b2t1.churchpalm.entities.Preaching;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import android.view.View;
 
@@ -37,6 +35,7 @@ public class PreachingActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private RecyclerView recyclerPreaching;
+    //private int[] images = {1, 2, 3, 4};
     private List<Preaching> listPreaching = new ArrayList<>();
 
     @Override
@@ -86,14 +85,14 @@ public class PreachingActivity extends AppCompatActivity
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
+        /*FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -105,34 +104,34 @@ public class PreachingActivity extends AppCompatActivity
 
     public void createPreaching(){
 
-        Preaching preaching = new Preaching("Pregação Santa ceia","11/02/2018");
+        Preaching preaching = new Preaching("Pregação Santa ceia","22/02/2018", R.drawable.biblia1);
         this.listPreaching.add(preaching);
 
-        preaching = new Preaching("Pregação Sobre Ser Ponte", "21/03/2018");
+        preaching = new Preaching("Pregação Sobre Ser Ponte", "21/03/2018", R.drawable.biblia1);
         this.listPreaching.add(preaching);
 
-        preaching = new Preaching("Pregação Sobre Ser Ponte", "21/03/2018");
+        preaching = new Preaching("Pregação Sobre Ser Ponte", "21/03/2018", R.drawable.biblia3);
         this.listPreaching.add(preaching);
 
-        preaching = new Preaching("Pregação Sobre Romanos 1", "28/04/2018");
+        preaching = new Preaching("Pregação Sobre Romanos 1", "28/04/2018", R.drawable.biblia4);
         this.listPreaching.add(preaching);
 
-        preaching = new Preaching("Pregação Sobre Ser Sal e Luz", "14/07/2018");
+        preaching = new Preaching("Pregação Sobre Ser Sal e Luz", "14/07/2018", R.drawable.biblia3);
         this.listPreaching.add(preaching);
 
-        preaching = new Preaching("Pregação Sobre Corpo, Alma e Espírito", "01/09/2018");
+        preaching = new Preaching("Pregação Sobre Corpo, Alma e Espírito", "01/09/2018", R.drawable.biblia2);
         this.listPreaching.add(preaching);
 
-        preaching = new Preaching("Pregação Sobre Doação", "07/11/2018");
+        preaching = new Preaching("Pregação Sobre Doação", "07/11/2018", R.drawable.biblia1);
         this.listPreaching.add(preaching);
 
-        preaching = new Preaching("Pregação Sobre Natal", "24/12/2018");
+        preaching = new Preaching("Pregação Sobre Natal", "24/12/2018", R.drawable.biblia2);
         this.listPreaching.add(preaching);
 
-        preaching = new Preaching("Pregação Sobre Comunhão", "14/04/2019");
+        preaching = new Preaching("Pregação Sobre Comunhão", "14/04/2019", R.drawable.biblia3);
         this.listPreaching.add(preaching);
 
-        preaching = new Preaching("Pregação Sobre A Cruz Vazia", "30/06/2019");
+        preaching = new Preaching("Pregação Sobre A Cruz Vazia", "30/06/2019", R.drawable.biblia4);
         this.listPreaching.add(preaching);
 
     }
